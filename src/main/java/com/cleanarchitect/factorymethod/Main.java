@@ -4,7 +4,6 @@ import java.util.List;
 
 import com.cleanarchitect.factorymethod.framework.Factory;
 import com.cleanarchitect.factorymethod.framework.Product;
-import com.cleanarchitect.factorymethod.idcard.IDCard;
 import com.cleanarchitect.factorymethod.idcard.IDCardFactory;
 
 public class Main {
@@ -18,9 +17,9 @@ public class Main {
         card2.use();
         card3.use();
 
-        List owners = ((IDCardFactory)factory).getOwners();
-        for(Object owner : owners) {
-            System.out.println((String)owner);
+        List<String> owners = ((IDCardFactory)factory).getOwners();
+        for(String owner : owners) {
+            System.out.println(owner);
         }
     }
 }

@@ -7,7 +7,7 @@ import com.cleanarchitect.factorymethod.framework.Factory;
 import com.cleanarchitect.factorymethod.framework.Product;
 
 public class IDCardFactory extends Factory{
-    private List owners = new ArrayList<>();
+    private List<String> owners = new ArrayList<>();
 
     @Override
     protected Product createProduct(String owner) {
@@ -19,7 +19,7 @@ public class IDCardFactory extends Factory{
         owners.add(((IDCard)product).getOwner());
     }
 
-    public List getOwners() {
+    public List<String> getOwners() {
         return owners;
     }
 }
