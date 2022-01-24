@@ -6,7 +6,7 @@ import java.io.Reader;
 import java.util.Properties;
 
 public class Database {
-
+    private static final String DATADIR = "src/main/java/com/cleanarchitect/facade/data";
     public Database() {
     }
     
