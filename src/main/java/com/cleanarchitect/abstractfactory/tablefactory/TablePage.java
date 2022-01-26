@@ -18,9 +18,9 @@ public class TablePage extends Page{
         builder.append( "<body>\n" );
         builder.append( "<h1>" + title + "</h1>\n" );
         builder.append( "<table width=\"80%\" border=\"3\">\n" );
-        Iterator it = content.iterator();
+        Iterator<Item> it = content.iterator();
         while(it.hasNext()) {
-            Item item = (Item)it.next();
+            Item item = it.next();
             builder.append(item.makeHTML());
         }
         builder.append( "</table>\n" );

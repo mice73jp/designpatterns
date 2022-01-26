@@ -17,9 +17,9 @@ public class ListTray extends Tray{
         builder.append( "<li>\n" );
         builder.append( caption + "\n" );
         builder.append( "<ul>\n" );
-        Iterator it = tray.iterator();
+        Iterator<Item> it = tray.iterator();
         while(it.hasNext()) {
-            Item item = (Item)it.next();
+            Item item = it.next();
             builder.append(item.makeHTML());
         }
 

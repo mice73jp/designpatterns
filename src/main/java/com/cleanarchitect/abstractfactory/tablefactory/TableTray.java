@@ -20,9 +20,9 @@ public class TableTray extends Tray{
 
         builder.append( "</tr>" );
         builder.append( "<tr>" );
-        Iterator it = tray.iterator();
+        Iterator<Item> it = tray.iterator();
         while(it.hasNext()) {
-            Item item = (Item)it.next();
+            Item item = it.next();
             builder.append(item.makeHTML());
         }
 

@@ -8,9 +8,9 @@ public class MacroCommand implements Command{
 
     @Override
     public void execute() {
-        Iterator it = this.commands.iterator();
+        Iterator<Command> it = this.commands.iterator();
         while(it.hasNext()) {
-            ((Command)it.next()).execute();
+            (it.next()).execute();
             try {
                 Thread.sleep(500);
             } catch ( InterruptedException e) {
