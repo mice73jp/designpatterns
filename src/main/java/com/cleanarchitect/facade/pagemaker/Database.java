@@ -2,7 +2,6 @@ package com.cleanarchitect.facade.pagemaker;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.Reader;
 import java.util.Properties;
 
 public class Database {

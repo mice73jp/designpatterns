@@ -15,9 +15,9 @@ public class Directory extends Entry{
     @Override
     protected void printList(String prefix) {
         System.out.println(prefix + "/" + this);
-        Iterator it = directory.iterator();
+        Iterator<Entry> it = directory.iterator();
         while(it.hasNext()) {
-            Entry ent = (Entry)it.next();
+            Entry ent = it.next();
             ent.printList(prefix + "/" + name);
         }
 
@@ -31,9 +31,9 @@ public class Directory extends Entry{
     @Override
     public int getSize() {
         int size = 0;
-        Iterator it = directory.iterator();
+        Iterator<Entry> it = directory.iterator();
         while(it.hasNext()) {
-            Entry ent = (Entry)it.next();
+            Entry ent = it.next();
             size += ent.getSize();
         }
 

@@ -1,6 +1,5 @@
 package com.cleanarchitect.facade.pagemaker;
 
-import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Properties;
