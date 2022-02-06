@@ -1,0 +1,6 @@
+a1@youngjin.com=Kim
+b1@youngjin.com=Lee
+c1@youngjin.com=Kang
+d1@youngjin.com=Pak
+
+# Move this file to the root of source file
