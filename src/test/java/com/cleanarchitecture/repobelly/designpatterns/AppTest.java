@@ -1,4 +1,4 @@
-package com.cleanarchitect.repobelly.designpatterns;
+package com.cleanarchitecture.repobelly.designpatterns;
 
 import static org.junit.Assert.assertTrue;
 
